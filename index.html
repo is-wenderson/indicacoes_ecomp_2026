@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMP 2026 | Portal de Indicações Estratégicas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <img src="img/logo do site .png" alt="Grupo ECOMP" class="logo">
+            <nav>
+                <button class="btn-outline" onclick="sendWhatsApp('duvida')">Dúvidas</button>
+                <button class="btn-primary" onclick="sendWhatsApp('geral')">Quero Indicar</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">PROGRAMA DE PARCERIA 2026 - GRUPO ECOMP</span>
+                <h1>Sua influência gera <br><span class="accent">lucratividade direta</span></h1>
+                <p>Transformamos sua parceria em resultados líquidos. Participe de um ecossistema onde cada indicação reduz seus custos operacionais e gera créditos imediatos na sua fatura.</p>
+                <div class="hero-cta-area">
+                    <a href="#levels" class="btn-primary">Ver Meus Benefícios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="levels" class="section">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Sistema de Blocos</h2>
+                <p>Ganhe créditos imediatos em cada etapa da jornada de indicação.</p>
+            </div>
+            
+            <div class="levels-grid">
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-num">01</span>
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Indicação Simples</h3>
+                    <p>Envie nome, empresa e contato de 5 indicados qualificados dentro do *perfil-alvo.</p>
+                    <div class="level-reward">
+                        <small>Crédito em Fatura</small>
+                        <span class="price">R$ 250</span>
+                    </div>
+                    <button class="btn-level" onclick="sendWhatsApp('nivel1')">Enviar Lista</button>
+                </div>
+
+                <div class="level-card featured">
+                    <div class="level-header">
+                        <span class="level-num">02</span>
+                        <i class="fas fa-comments-dollar"></i>
+                    </div>
+                    <h3>Indicação Ativa</h3>
+                    <p>Viabilize a apresentação estratégica e agende a reunião para 5 empresas indicadas.</p>
+                    <div class="level-reward">
+                        <small>Crédito em Fatura</small>
+                        <span class="price">R$ 500</span>
+                    </div>
+                    <button class="btn-level primary" onclick="sendWhatsApp('nivel2')">Agendar Reuniões</button>
+                </div>
+
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-num">03</span>
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3>Indicação Convertida</h3>
+                    <p>Quando o seu indicado assina contrato e efetua o pagamento da mensalidade inicial.</p>
+                    <div class="level-reward">
+                        <small>Desconto Líquido</small>
+                        <span class="price">20% OFF</span>
+                    </div>
+                    <button class="btn-level" onclick="sendWhatsApp('nivel3')">Validar Conversão</button>
+                </div>
+            </div>
+        </div>
+        <p class="target-profile-note">
+                * <strong>Perfil alvo para validação:</strong> Gestores/Sindicos de Condomínios (SEGCOMP), Gestores/Dono de Clínicas (TECHCOMP). 
+        </p>
+    </section>
+
+    <section class="competition dark-section">
+        <div class="container">
+            <div class="comp-layout">
+                <div class="comp-text">
+                    <h2>🏆 Competição Trimestral</h2>
+                    <p>SEGCOMP e TECHCOMP possuem rankings independentes. Os prêmios são adicionais e cumulativos com os bônus de blocos.</p>
+                    <ul class="prize-list">
+                        <li><strong>1º Lugar:</strong> 100% OFF (Mensalidade Isenta)</li>
+                        <li><strong>2º Lugar:</strong> 50% OFF na fatura</li>
+                        <li><strong>3º Lugar:</strong> 25% OFF na fatura</li>
+                    </ul>
+                    <p class="ranking-note"><i class="fas fa-clock"></i> Atualizado semanalmente via e-mail.</p>
+                </div>
+                <div class="comp-visual-wrapper">
+                    <div class="ranking-card">
+                        <div class="rank-title">RANKING SEGCOMP</div>
+                        <div class="rank-item"><span>1º</span><span>Líder Seg</span></div>
+                        <div class="rank-item inactive"><span>2º</span><span>Sua Empresa?</span></div>
+                        <div class="rank-item inactive"><span>3º</span><span>Aguardando...</span></div>
+                    </div>
+                    <div class="ranking-card">
+                        <div class="rank-title">RANKING TECHCOMP</div>
+                        <div class="rank-item"><span>1º</span><span>Líder Tech</span></div>
+                        <div class="rank-item inactive"><span>2º</span><span>Sua Empresa?</span></div>
+                        <div class="rank-item inactive"><span>3º</span><span>Aguardando...</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="rules-container">
+                <div class="rules-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Regras de Transparência Financeira</h3>
+                </div>
+                <div class="rules-grid">
+                    <div class="rule-item">
+                        <h4>Aplicação do Bônus</h4>
+                        <p>Créditos aplicados exclusivamente na fatura do mês subsequente. O desconto é pontual e não recorrente.</p>
+                    </div>
+                    <div class="rule-item">
+                        <h4>Sistema de Adiantamento</h4>
+                        <p>Os valores de R$ 250 e R$ 500 são adiantamentos abatidos do bônus final de 20% na conversão.</p>
+                    </div>
+                    <div class="rule-item">
+                        <h4>Acúmulo</h4>
+                        <p>Acumule múltiplos blocos e prêmios do ranking no mesmo ciclo, até o teto da sua mensalidade.</p>
+                    </div>
+                    <div class="rule-item">
+                        <h4>Validação de Contatos</h4>
+                        <p>Todas as indicações passam por uma curadoria técnica do nosso SDR para validar o fit de negócio e o alinhamento com o perfil alvo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>Grupo ECOMP &copy; 2026 | Inteligência em Tecnologia e Segurança</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

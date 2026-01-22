@@ -17,10 +17,14 @@ function sendWhatsApp(tipo) {
         case 'duvida':
             mensagem = "Olá! Vi o portal de indicações 2026 e gostaria de tirar dúvidas sobre as regras de adiantamento e o ranking semanal.";
             break;
+        case 'geral':
+            mensagem = "Olá! Gostaria de falar com o consultor sobre o Programa de Indicações do Grupo Ecomp.";
+            break;
         default:
             mensagem = "Olá! Gostaria de falar com o consultor sobre o Programa de Indicações do Grupo Ecomp.";
             break;
     }
 
     window.open(baseLink + encodeURIComponent(mensagem), '_blank');
+
 }

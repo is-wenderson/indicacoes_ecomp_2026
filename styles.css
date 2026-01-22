@@ -327,6 +327,35 @@ footer {
     color: var(--text-gray); 
     border-top: 1px solid rgba(255,255,255,0.05); 
 }
+/* CTA Footer */
+.footer-cta {
+    background-color: var(--navy-light);
+    padding: 60px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cta-box h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.cta-box p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Garante o alinhamento central do botão */
+.cta-box .btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1rem;
+}
 
 /* ---------------------------------------------------------
    RESPONSIVIDADE
@@ -336,4 +365,5 @@ footer {
     .comp-visual-wrapper { grid-template-columns: 1fr; }
     .hero { text-align: center; }
     .hero-cta-area { align-items: center; }
+
 }

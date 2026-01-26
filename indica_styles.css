@@ -223,32 +223,6 @@ header {
 }
 
 .ranking-card { 
-    background: var(--navy-dark); 
-    padding: 20px; 
-    border-radius: 10px; 
-    border: 1px solid rgba(255,255,255,0.1); 
-}
-
-.rank-title { 
-    font-size: 0.8rem; 
-    color: var(--blue-neon); 
-    font-weight: bold; 
-    margin-bottom: 15px; 
-    border-bottom: 1px solid rgba(255,255,255,0.1); 
-    padding-bottom: 5px; 
-    text-align: center;
-}
-
-.rank-item { 
-    display: flex; 
-    justify-content: space-between; 
-    padding: 10px 0; 
-    border-bottom: 1px solid rgba(255,255,255,0.05); 
-    font-size: 0.85rem; 
-}
-
-.rank-item.inactive { opacity: 0.3; }
-.rank-item span:first-child { color: var(--blue-neon); font-weight: bold; }
 
 /* ---------------------------------------------------------
    REGRAS E PERFIL ALVO
